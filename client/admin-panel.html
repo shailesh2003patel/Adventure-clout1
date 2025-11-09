@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Admin Panel — Adventure Clout (Preview)</title>
+  <link rel="stylesheet" href="./css/updates.css">
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <div class="logo">AC</div>
+      <div>
+        <h1>Admin Panel (Beta)</h1>
+        <div style="color:#f8fafc;font-size:13px">Create tasks, approve verifications & view analytics</div>
+      </div>
+    </header>
+
+    <div style="display:flex;gap:18px">
+      <div class="card" style="flex:1">
+        <h3 style="margin-top:0">Create Bonus Task</h3>
+        <div style="color:var(--muted)">Create a short or long bonus task for verification or promotions</div>
+        <form style="margin-top:12px;display:flex;flex-direction:column;gap:10px">
+          <input placeholder="Title" style="padding:10px;border-radius:8px;border:1px solid #e6eef7"/>
+          <textarea placeholder="Description" style="padding:10px;border-radius:8px;border:1px solid #e6eef7"></textarea>
+          <div style="display:flex;gap:10px">
+            <input placeholder="Points" style="padding:10px;border-radius:8px;border:1px solid #e6eef7; width:120px"/>
+            <select style="padding:10px;border-radius:8px;border:1px solid #e6eef7">
+              <option>General</option><option>Developer</option><option>Designer</option>
+            </select>
+          </div>
+          <button style="padding:10px;border-radius:8px;background:linear-gradient(135deg,#2563eb,#06b6d4);color:white;border:none">Create Task</button>
+        </form>
+      </div>
+
+      <div class="card" style="width:360px">
+        <h3 style="margin-top:0">Recent Requests</h3>
+        <div style="color:var(--muted);margin-bottom:8px">Verify requests & reports</div>
+        <div style="max-height:240px;overflow:auto">
+          <div style="padding:10px;border-radius:8px;background:#fbfdff;margin-bottom:8px">
+            <div style="font-weight:700">Shailesh_777</div>
+            <div style="color:var(--muted);font-size:13px">Verification requested • 2 hours ago</div>
+            <div style="margin-top:8px;display:flex;gap:8px">
+              <button style="flex:1;padding:8px;border-radius:8px;background:#10b981;color:white;border:none">Approve</button>
+              <button style="flex:1;padding:8px;border-radius:8px;background:#ef4444;color:white;border:none">Reject</button>
+            </div>
+          </div>
+          <!-- more items -->
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
